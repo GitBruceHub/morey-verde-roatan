@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Roatán Ocean View Home for Sale in West End | 3BR with Rental Apartment | Vista Azul</title>
+    <title>Roatán Ocean View Home for Sale in West End | 3BR with Rental Apartment | Vista Azul</title>  
+    <link href="assets/img/eel.ico" rel="icon">
+
 <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYAX8TsIr0AL2ey2GhYXMemYPqZWlwcjJ_w&s">
+
 <meta name="DC.title" content="Vista Azul Roatán – Ocean View Home for Sale in West End Honduras">
 
 <meta name="google-site-verification" content="huDZINcEm7gYgOMQF0605CfnWv1npzT3XcjKMI3AxeE">
@@ -332,7 +335,53 @@
             section {
                 padding: 58px 18px
             }
+        } 
+           .back-to-top {
+              position: fixed;
+              right: 20px;
+              bottom: 20px;
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+              background: #08bbe8;
+              color: #191970;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 28px;
+              text-decoration: none;
+              z-index: 98;
+              box-shadow: 0 6px 18px rgba(25, 25, 112, .35);
+          
+              opacity: 0;
+              visibility: hidden;
+              pointer-events: none;
+              transform: translateY(10px);
+              transition: opacity .25s ease, transform .25s ease, visibility .25s;
+          }
+          
+          .back-to-top.show {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+              transform: translateY(0);
+          }
+          
+          .back-to-top:hover {
+              background: #f4d06f;
+              color: #191970;
+          }
+
+        .back-to-top-arrow {
+            display: block;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1;
+            color: #191970;
+            transform: translateY(-1px);
         }
+
     </style>   
     <script type="application/ld+json">
 {
@@ -662,11 +711,37 @@
     </section>
 
     <div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img" alt="Expanded image"></div>
+
+    <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top">
+        <span class="back-to-top-arrow" aria-hidden="true">&#8593;</span>
+    </a>
+
     <script>
         function openLightbox(src) {
             document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').style.display = 'flex'
+            document.getElementById('lightbox').style.display = 'flex';
         }
+
+        const backToTop = document.getElementById('backToTop');
+
+        function toggleBackToTop() {
+            if (window.scrollY > 600) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        }
+
+        window.addEventListener('scroll', toggleBackToTop);
+        toggleBackToTop();
+
+        backToTop.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 
