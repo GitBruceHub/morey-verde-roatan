@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gitbrucehub.github.io/vista-azul-roatan/sitemap.xml
