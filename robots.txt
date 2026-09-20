@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gitbrucehub.github.io/vista-azul-roatan/sitemap.xml
+Sitemap: https://gitbrucehub.github.io/morey-verde-roatan/sitemap.xml
