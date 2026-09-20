@@ -1,2 +1,3 @@
-# vista-azul-roatan
-Vista Azul Roatán ($424,250): A modern hilltop duplex in West End. This Caribbean investment features a 2BR main home plus a private income studio. Fully equipped with Tier 1 solar, battery backup, and fiber internet. Minutes from Blue Channel diving and West Bay Beach. Perfect for rental income or off-grid island living. MLS 26-62.
+# Morey Verde | Vista Azul
+
+Morey Verde | Vista Azul ($449,000): A fully furnished hilltop duplex in West End, Roatán with ocean views. The property features a 2BR/2.5BA main residence plus a private 1BR/1BA rental studio with its own entrance. Equipped with a 5.88 kW solar system with Huawei battery backup, fiber internet, and 1,750L of backup water storage. No HOA. Minutes from West End village, Blue Channel diving, and West Bay Beach. Ideal for full-time island living, rental income, remote work, or off-grid capable living.
